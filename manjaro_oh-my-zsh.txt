@@ -1,0 +1,12 @@
+记录一下manjaro配置oh-my-zsh
+1：下zsh
+    sudo pacman -S zsh
+2: 切换zsh
+    chsh -s /bin/bash #切换成bash
+    chsh -s /bin/zsh  #切换成zsh
+    cat /etc/shells   #查看所有可用的shell
+    echo $SHELL       #查看正在使用的shell
+3: 下载oh-my-zsh(手动下载)
+    git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
+    cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+    在clone下来的.oh-my-zsh下的tools中有install.sh,记得给执行权限
